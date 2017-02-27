@@ -97,7 +97,7 @@ export default Ember.Component.extend({
     this.inFlightDidChange();
   },
 
-  click() {
+  click(event) {
     event.preventDefault();
     this.set('inFlight', true);
 
