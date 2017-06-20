@@ -135,7 +135,7 @@
 }
 
 .fixed-center {
-  position: fixed;
+  position: fixed !important;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
