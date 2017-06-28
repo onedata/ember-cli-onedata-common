@@ -26,7 +26,7 @@ export default ArrayProxy.extend({
   content: null,
   
   /**
-   * Which property of record should be used to create conlict ID.
+   * Which property of record should be used to create conflict ID.
    * @type {string}
    * @default 'id'
    */
@@ -63,8 +63,9 @@ export default ArrayProxy.extend({
     }
     
     /**
-     * Assings a ``conflictLabel`` property for each record in array.
-     * It distinguish a record within other records if 
+     * Assigns a ``conflictLabel`` property for each record in array.
+     * It distinguish a record within other records if there are multiple
+     * records with the same name.
      */
     let computeConflictIds = observer('content.[]', `content.@each.{${diffProperty},${conflictProperty}}`, 'defaultId', function() {
       let {

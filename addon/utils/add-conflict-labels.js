@@ -20,7 +20,7 @@ const {
 } = Ember;
 
 /**
- * Assings a ``conflictLabel`` property for each record in array.
+ * Assigns a ``conflictLabel`` property for each record in array.
  * See utils/conflict-ids for details about conflict ids algorithm.
  * @param {Array} records 
  * @param {string} conflictProperty 
