@@ -157,6 +157,15 @@
   color: $color-danger;
 }
 
+/// name-conflict component
+
+.conflict-label {
+  opacity: 0.75;
+}
+.conflict-at {
+  opacity: 0.5;
+}
+
 // Bootstrap extensions
 
 .table-no-border>thead>tr>th,

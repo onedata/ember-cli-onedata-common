@@ -49,6 +49,8 @@ export default function addConflictLabels(records, conflictProperty = 'name', di
           get(record, diffProperty) === defaultId ? null : conflictLabels[i]
         );
       }
+    } else if (conflictingRecords.length === 1) {
+      set(conflictingRecords[0], 'conflictLabel', null);
     }
   });
 }
