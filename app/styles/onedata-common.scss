@@ -134,6 +134,10 @@
   }
 }
 
+.tooltip .tooltip-inner {
+  word-wrap: break-word;
+}
+
 .fixed-center {
   position: fixed !important;
   top: 50%;
